@@ -1,10 +1,13 @@
 <template>
   <div container>
     <div title>SAVAGE FENTY</div>
+    <div socials twitter>TWITTER</div>
     <div link>#SAVAGEX</div>
+    <div socials instagram>INSTAGRAM</div>
     <div link>#NEWDROPS</div>
+    <div socials youtube>YOUTUBE</div>
     <div link>#SAVAGE X FIT</div>
-    <div link>#X SURVIVORS</div>
+    <div link mt-80>#X SURVIVORS</div>
     <div footer>@SAVAGEFENTY</div>
   </div>
 </template>
@@ -28,7 +31,6 @@
   [container] {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 3vh;
     min-height: 100vh;
   }
@@ -39,11 +41,32 @@
   }
   [link] {
     font-size: 42px;
-    border-bottom: 3px solid #b83439;
-    width: fit-content;
-    margin: auto;
+    text-decoration: underline;
+    margin: 0 auto;
   }
   [footer] {
     font-size: 18px;
+    margin-top: auto;
+  }
+  [mt-80] {
+    margin-top: 80px;
+  }
+  [socials] {
+    width: fit-content;
+    background-color: #fbfa24;
+    text-decoration: underline;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 6px;
+  }
+  [twitter] {
+    transform: rotate(-15deg);
+  }
+  [instagram] {
+    transform: rotate(15deg);
+    margin-left: auto;
+  }
+  [youtube] {
+    transform: rotate(-15deg);
   }
 </style>
