@@ -1,72 +1,49 @@
 <template>
   <div container>
-    <div title v-text="title" />
-    <div data-link-container>
-      <div
-        data-link
-        v-for="(link, index) in links"
-        v-bind:key="index"
-        v-text="link"
-      />
-    </div>
+    <div title>SAVAGE FENTY</div>
+    <div link>#SAVAGEX</div>
+    <div link>#NEWDROPS</div>
+    <div link>#SAVAGE X FIT</div>
+    <div link>#X SURVIVORS</div>
+    <div footer>@SAVAGEFENTY</div>
   </div>
 </template>
 
 <script>
   export default {
     name: 'App',
-    data: () => ({
-      title: "SAVAGE FENTY",
-      links: [
-        '#SAVAGEX',
-        '#SAVAGEXSURVIVORS',
-        '#UXTRA',
-        'NEW DROPS',
-        'SAVAGE X FIT GUIDE',
-        'YOUTUBE'
-      ]
-    }),
   }
 </script>
 
 <style>
-  body {
-    background: #fff;
-    color: #fff;
+  * {
+    box-sizing: border-box;
+    background: #edc5e9;
+    color: #b83439;
     font-family: Helvetica;
     font-weight: bold;
     text-align: center;
     margin: 0;
   }
   [container] {
-    background-color: #fff;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 3vh;
-    height: 94vh;
-    overflow: hidden;
-    background-color: black;
+    min-height: 100vh;
   }
   [title] {
-    font-size: 60px;
-    height: 30vh;
-    color: #d1ac6b;
+    font-size: 42px;
     display: flex;
     align-items: center;
   }
-  [data-link-container] {
-    display: flex;
-    flex-direction: column;
-    height: 64vh;
-    justify-content: space-around;
+  [link] {
+    font-size: 42px;
+    border-bottom: 3px solid #b83439;
+    width: fit-content;
+    margin: auto;
   }
-  [data-link] {
-    width: 100%;
-    padding: 15px 0;
-    border: 1px solid white;
-    background: transparent;
-  }
-  [data-link]:hover {
-    color: #cb1f63;
-    background-color: #ede3b9;
+  [footer] {
+    font-size: 18px;
   }
 </style>
