@@ -29,7 +29,7 @@
   }
 </script>
 
-<style lang="scss">
+<style>
   body {
     background: #fff;
     color: #fff;
@@ -64,9 +64,9 @@
     padding: 15px 0;
     border: 1px solid white;
     background: transparent;
-    &:hover {
-      color: #cb1f63;
-      background-color: #ede3b9;
-    }
+  }
+  [data-link]:hover {
+    color: #cb1f63;
+    background-color: #ede3b9;
   }
 </style>
